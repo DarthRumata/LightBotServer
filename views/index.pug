@@ -1,0 +1,17 @@
+html
+    head
+        include includes/bootstrap.pug
+        include includes/fileinput.pug
+        script(src="js/index.js")
+        title= title
+    body
+        h1(align='center')= header
+        .container-fluid
+            div.row
+                div.col
+                    div.alert.alert-primary.text-center(role="alert") Bot 1
+                    div.file-loading
+                        input#firstFileInput(name="firstFileInput", type="file")
+                div.col
+                    div.alert.alert-primary.text-center(role="alert") Bot 2
+
